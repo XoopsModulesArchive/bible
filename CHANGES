@@ -1,0 +1,29 @@
+ChangeLog
+
+1.2.3
+	*Migrated to generating bible data files here, since the one-line-per-verse version is no longer
+being officially distributed.
+	*Updated World English Bible draft.
+
+1.2.2
+	*Fixed potential problem with crappy browsers.
+	*Updated World English Bible draft.
+
+1.2.1
+	*Updated World English Bible draft.
+
+1.2.0
+	*Changed name to PHPScripture, in order to remove conflict with http://onlinebible.sourceforge.net/
+	*Updated World English Bible draft.
+
+1.1.0
+	*Minor Bug Fixes
+	*Major Bug Fixes
+	*Added optional search functionality. (Thanks Quentin!)
+	*Added full CSS-based theme support.
+
+1.0.1
+	*Make short-name book reference case-insensitive.
+
+1.0.0
+	*Initial Release

@@ -1,0 +1,47 @@
+PHPScripture by Alex Markley
+http://bible.cyberMalex.com/
+
+(Turn on word wrapping or die.)
+
+Contributors (In chronological order.)
+	Alex Markley (http://cyberMalex.com/)
+	Quentin Smith (http://www.comclub.org/)
+
+Whaa?
+	PHPScripture is a program written to fill a rather obvious (IMHO) need. Basically, this program allows anybody who has a PHP-enabled web server to serve a copy of the Word of God very, very quickly. While the user interface is nice for reading, it's designed expressly for a quick, easy way of sending passages of scripture to and fro, since the scripture reference is actually encoded in the URL, it is easy to send people a link to a passage without typing it in.
+
+Copying?
+	PHPScripture is Copyright (C) 2003, Alex Markley
+	
+	PHPScripture is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+	
+	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+How?
+	1) Upload the files to a useful place inside your web server's document tree.
+	2) Change the things that look wrong in config.php.
+	3) Make sure "AcceptPathInfo ON" (or analogous) is somewhere in your PHP file section of your web server config.
+	4) Go over steps 2 and 3 again, because you probably missed something for lack of documentation.
+	
+	If you wish to use it as a plug-in for a PHP-based CMS system, you have my blessing to start hacking away. :)
+	If you have troubles, check troubleshooting.
+
+Troubleshooting
+	Common Problem 1:
+		Q) It's not working! Blah blah this happens, something, something else!
+		A) This is most likely caused by you forgetting to change everything broken in config.php. If that's not the case, check Bugs below.
+	
+	Common Problem 2:
+		Q) It's giving me a 404 every time I press a button or click a link on it!
+		A) Either problem 1 applies, or your web server doesn't have path info enabled. (When using Apache, you might try "AcceptPathInfo ON" in your PHP file section.)
+	
+	Common Problem 3:
+		Q) It tells me it can't find the book, even when I selected it from the list!
+		A) Either problem 1 applies, or the program doesn't have access to (or can't find) the data files. Make sure all of the PHPScripture files have correct permissions with something like, "chmod 644 bible.php config.php bible/*;chmod 755 bible".
+
+Bugs!!!
+	Yes, even Christians are fallible, and my PHP coding is like an explosion in a pot of spaghetti. If you find an honest-to-goodness bug, check the Bugs section on http://bible.cyberMalex.com/.
+
+
